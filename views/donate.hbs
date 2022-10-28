@@ -1,0 +1,129 @@
+
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+  
+
+       <!-- page Navigation -->
+       <nav class="navbar custom-navbar navbar-expand-md navbar-light fixed-top" data-spy="affix" data-offset-top="10">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="/assets/imgs/logo2.png" alt="">
+            </a>
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">                     
+                    <li class="nav-item">
+                        <a class="nav-link" href="/register">Register</a>
+                    </li>
+                    <li class="nav-item"  data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-size="small">
+                        <a class="nav-link" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">share</a>
+                        
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Givaway</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://collins-movies-search.netlify.app">Movies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://collinsportfolio-28.netlify.app/" class="ml-4 nav-link btn btn-primary btn-sm rounded">Portfolio</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Of Second Navigation -->
+
+    <header class="header">
+        <div class="overlay">
+            <!-- <h1 class="subtitle">LeadMark Landing Page</h1>
+            <h1 class="title">We Are Creative</h1>   -->
+            <label id="lblGreetings" class="subtitle"></label>
+            <span id='ct6' class="title"></span>
+        </div>  
+        <div class="shape">
+            <svg viewBox="0 0 1500 200">
+                <path d="m 0,240 h 1500.4828 v -71.92164 c 0,0 -286.2763,-81.79324 -743.19024,-81.79324 C 300.37862,86.28512 0,168.07836 0,168.07836 Z"/>
+            </svg>
+        </div>  
+        <div class="mouse-icon"><div class="wheel"></div></div>
+    </header>
+
+              <div class="row m-auto" id="card1">
+  <div class="card-img"></div>
+  <div class="card-info">
+    <p class="text-title">Proverbs 11:25</p>
+    <p class="text-body">A generous person will prosper; whoever refreshes others will be refreshed.</p>
+  </div>
+  <div class="card-footer">
+  <span class="text-title">$0.0</span>
+  <div class="card-button">
+        <div class="svg-wrapper-1">
+    <div class="svg-wrapper">
+        <a href="/buy">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+        <path fill="none" d="M0 0h24v24H0z"></path>
+        <path fill="currentColor" d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"></path>
+      </svg> 
+        </a>
+      
+    </div>
+  </div>
+  <span>Donate</span>
+   
+  </div>
+</div>
+</div>
+
+<div>
+
+    <footer class="mt-5 py-4 border-top border-secondary">
+        <p class="mb-0 small">&copy; <script>document.write(new Date().getFullYear())</script>, my Portfolio Created By <a href="https://wa.me/+2349121991685" target="_blank">pHreshcode.</a>  All rights reserved </p>     
+    </footer>
+  </path>
+   
+
+</div>
+
+
+    <script>
+    function display_ct6() {
+        var x = new Date()
+        var ampm = x.getHours( ) >= 12 ? ' PM' : ' AM';
+        hours = x.getHours( ) % 12;
+        hours = hours ? hours : 12;
+        var x1=x .getMonth() + 1+ "-" + x.getDate()
+        x1 = x1 + " - " +  hours + ":" +  x.getMinutes()  + ampm;
+        document.getElementById('ct6').innerHTML = x1;
+        display_c6();
+         }
+         function display_c6(){
+        var refresh=1000; // Refresh rate in milli seconds
+        mytime=setTimeout('display_ct6()',refresh)
+        }
+        display_c6()
+        </script>
+       
+    <script>
+        var myDate = new Date();
+        var hrs = myDate.getHours();
+    
+        var greet;
+    
+        if (hrs < 12)
+            greet = 'Good Morning';
+        else if (hrs >= 12 && hrs <= 17)
+            greet = 'Good Afternoon';
+        else if (hrs >= 17 && hrs <= 24)
+            greet = 'Good Evening';
+    
+        document.getElementById('lblGreetings').innerHTML =
+            '<b>' + greet + '</b> and welcome to pHreshcode';
+    </script> 
+    
+</body>
+      
